@@ -35,6 +35,7 @@ public class NPC : MonoBehaviour
 
     private void Update()
     {
+        /*
         if(Vector3.Distance(transform.position, destino) < 2)
         {
             indiceHijos++; 
@@ -46,7 +47,7 @@ public class NPC : MonoBehaviour
             destino = ruta.GetChild(indiceHijos).position;
             GetComponent<NavMeshAgent>().SetDestination(destino);
         }
-
+        */
 
     }
 }
