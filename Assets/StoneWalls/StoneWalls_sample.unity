@@ -5240,12 +5240,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452916657}
-  m_LocalRotation: {x: 0.004224943, y: 0.9887575, z: -0.14672896, w: 0.028485978}
-  m_LocalPosition: {x: -13.155165, y: 5.2127566, z: 30.21246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1485478018}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &457329075
@@ -13517,7 +13517,7 @@ Transform:
   - {fileID: 308072722}
   - {fileID: 405913445}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242643733
 GameObject:
@@ -14957,7 +14957,7 @@ Transform:
   - {fileID: 1174173964}
   - {fileID: 1868049023}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403897654
 GameObject:
@@ -15772,6 +15772,7 @@ GameObject:
   - component: {fileID: 1485478021}
   - component: {fileID: 1485478020}
   - component: {fileID: 1485478019}
+  - component: {fileID: 1485478022}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -15790,9 +15791,10 @@ Transform:
   m_LocalPosition: {x: -42.45182, y: 4.1399994, z: 73.201996}
   m_LocalScale: {x: 4.77, y: 4.77, z: 4.77}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 452916662}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1485478019
 CapsuleCollider:
@@ -15858,6 +15860,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485478017}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1485478022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485478017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c84556cc1f23fb4429ae79187e951e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 100
+  playerBody: {fileID: 1485478018}
 --- !u!1 &1505281508
 GameObject:
   m_ObjectHideFlags: 0
